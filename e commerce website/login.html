@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Zerai Store</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-body">
+
+    <div class="login-container">
+        <!-- Sign In Form -->
+        <div class="form-box login-box" id="loginForm">
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Sign in to continue to Zerai Store</p>
+
+            <form id="signInForm">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <div class="input-icon">
+                        <i class="far fa-envelope"></i>
+                        <input type="email" placeholder="name@example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <div class="input-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="••••••••">
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            </form>
+
+            <p class="switch-text">
+                Don't have an account? <a href="#" id="showSignUp">Sign Up</a>
+            </p>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="form-box signup-box hidden" id="signupForm">
+            <h2>Create Account</h2>
+            <p class="subtitle">Join Zerai Store for exclusive access</p>
+
+            <form id="registerForm">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <div class="input-icon">
+                        <i class="far fa-user"></i>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <div class="input-icon">
+                        <i class="far fa-envelope"></i>
+                        <input type="email" placeholder="name@example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <div class="input-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Create a password">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+            </form>
+
+            <p class="switch-text">
+                Already have an account? <a href="index.html" id="showLogin">Sign In</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
